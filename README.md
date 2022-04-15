@@ -21,7 +21,7 @@ Part-2
 I am creating a service account with IAM permissions for loki to access S3/DynamoDB (https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
 
 1. Created OIDC Provider using eksctl utility
-2. Creating a Policy for Loki (Required Permissions from here - https://grafana.com/docs/loki/latest/operations/storage/)
+2. Creating a Policy for Loki (Only gave limited permissions so it can work, not more than that. Got list of Permissions from here - https://grafana.com/docs/loki/latest/operations/storage/)
    `aws iam create-policy --policy-name scalable-loki-policy --policy-document file://loki-s3-dynamodb-permissions.json`
 3. Creating K8s Service Account and binding with IAM role
 
