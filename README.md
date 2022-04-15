@@ -47,4 +47,5 @@ eksctl create iamserviceaccount \
    `helm install loki-grafana grafana/grafana`
 9. To open grafana in browser
    `kubectl port-forward services/loki-grafana 8001:80`
-10. Added loki data source in Grafana, faced issue - "failed to flush user" err="ResourceNotFoundException: Requested resource not found" (https://github.com/grafana/loki/issues/5021#issuecomment-1016123138)
+10. Added loki data source in Grafana, faced issue - "failed to flush user" err="ResourceNotFoundException: Requested resource not found"
+11. Resolved it by adding `extraArgs` in Loki values.yml file (https://github.com/grafana/loki/issues/5021#issuecomment-1016123138)
