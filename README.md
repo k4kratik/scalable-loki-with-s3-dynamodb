@@ -39,7 +39,7 @@ eksctl create iamserviceaccount \
 
 4. Tested the access with a test pod. Successful!
 5. Cloned the Helm Chart for Loki. Tweaked values.yml (https://grafana.com/docs/loki/latest/configuration/examples/#aws-basic-configyaml)
-6. Installed the above helm chart
+6. Installed the above helm chart for Loki. (It will add some data in S3 & also it will create the table in DynamoDB)
    `helm upgrade --install loki --namespace=monitoring loki-helm-chart`
 7. Installed promtail helm chart
    `helm upgrade --install promtail grafana/promtail --set "config.lokiAddress=http://loki:3100/loki/api/v1/push" -n monitoring`
