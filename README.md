@@ -11,6 +11,7 @@ Part-1
 3. Tweak for scheduling more pods on a node then the default behavior. https://docs.aws.amazon.com/eks/latest/userguide/cni-increase-ip-addresses.html
 4. Node Groups (+ Role for nodes)
 5. metrics server
+6. Created an S3 bucket (scalable-loki-397795833797)
 
 ######
 
