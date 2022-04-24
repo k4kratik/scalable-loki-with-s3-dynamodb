@@ -20,7 +20,7 @@
                 "dynamodb:CreateTable",
                 "dynamodb:DeleteTable"
             ],
-            "Resource": "arn:aws:dynamodb:us-east-1:397795833797:table/loki_*"
+            "Resource": "arn:aws:dynamodb:us-east-1:170545349006:table/loki_*"
         },
         {
             "Sid": "DynamoDBAccessForLokiListTables",
@@ -40,8 +40,8 @@
                 "s3:DeleteObject"
             ],
             "Resource": [
-                "arn:aws:s3:::scalable-loki-397795833797",
-                "arn:aws:s3:::scalable-loki-397795833797/*"
+                "arn:aws:s3:::scalable-loki-170545349006",
+                "arn:aws:s3:::scalable-loki-170545349006/*"
             ]
         }
     ]

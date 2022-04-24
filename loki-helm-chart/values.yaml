@@ -101,7 +101,7 @@ config:
 
   storage_config:
     aws:
-      s3: s3://us-east-1/scalable-loki-397795833797
+      s3: s3://us-east-1/scalable-loki-170545349006
       dynamodb:
         dynamodb_url: dynamodb://us-east-1
 

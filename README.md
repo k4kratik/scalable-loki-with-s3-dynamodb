@@ -11,7 +11,7 @@ Part-1
 3. Tweak for scheduling more pods on a node then the default behavior. https://docs.aws.amazon.com/eks/latest/userguide/cni-increase-ip-addresses.html
 4. Node Groups (+ Role for nodes)
 5. metrics server
-6. Created an S3 bucket (scalable-loki-397795833797)
+6. Created an S3 bucket (scalable-loki-170545349006)
 
 ######
 
@@ -32,7 +32,7 @@ eksctl create iamserviceaccount \
     --namespace monitoring \
     --cluster scalable-loki \
     --role-name RoleForScalableLoki \
-    --attach-policy-arn arn:aws:iam::397795833797:policy/scalable-loki-policy \
+    --attach-policy-arn arn:aws:iam::170545349006:policy/scalable-loki-policy \
     --approve \
     --override-existing-serviceaccounts
 ```
